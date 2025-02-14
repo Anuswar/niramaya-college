@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | Niramaya college</title>
+    <link href="assets/images/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #343a40;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+  
+      /* Card Styling */
+      .card-custom {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      .card-custom:hover {
+        transform: translateY(-5px);
+      }
+  
+      .card-icon {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 1rem;
+      }
+  
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+  
+      .card-text {
+        font-size: 1.1rem;
+        color: #6c757d;
+      }
+  
+      /* Principal's Message */
+      .message-img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+  
+      .principal-message {
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.6;
+      }
+  
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .message-img {
+          max-width: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header>
+      <!-- Top -->
+      <div class="top-header d-none d-md-flex text-center text-md-start">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
+          <div class="contact-info">
+            <span class="mx-2"><i class="fa-solid fa-location-dot"></i> Vishwothama Nagar,Bantakal, Karnataka</span>|
+            
+            <span class="mx-2"><i class="fa-solid fa-phone"></i> +91 078293 13333</span >|
+            
+            <span class="mx-2"><i class="fa-solid fa-envelope"></i> info@niramayacollege.com</span>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" class="btn-primary me-2 rounded-circle" style="background: #1877f2; border: none">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="btn-primary me-2 rounded-circle" style="background: #1da1f2; border: none">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#" class="btn-primary me-2 rounded-circle" style="background: #e4405f; border: none">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="btn-primary me-2 rounded-circle" style="background: #0077b5; border: none">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <nav id="header" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/college-logo.png" class="img-fluid main-logo" alt="Niramaya College"  />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+              <!-- About Us Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li><a class="dropdown-item" href="#">Introduction to the College</a></li>
+                  <li><a class="dropdown-item" href="#values">Vision, Mission, and Core Values</a></li>
+                  <li><a class="dropdown-item" href="#message">Message from the Principal/Director</a></li>
+                </ul>
+              </li>
+
+              <!-- Courses & Programs Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses & Programs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                  <li><a class="dropdown-item" href="Courses/Course.html">BSc OT & Anesthesia</a></li>
+                  <li><a class="dropdown-item" href="Courses/Course.html">BSc MIT</a></li>
+                  <li><a class="dropdown-item" href="Courses/Course.html">BSc MLT</a></li>
+                  <li><a class="dropdown-item" href="Courses/Course.html">BSc Nursing</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="faculty.html">Faculty & Staff</a>
+              </li>
+
+              <!-- Facilities Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="facilities.html" id="facilitiesDropdown"  role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li><a class="dropdown-item" href="facilities.html#laboratory">Lab</a></li>     
+                  <li><a class="dropdown-item" href="facilities.html#library">Library</a></li>
+                  <li><a class="dropdown-item" href="facilities.html#classrooms">Classrooms</a></li>
+                  <li><a class="dropdown-item" href="facilities.html#computer">Computer Lab</a></li>
+                  <li><a class="dropdown-item" href="facilities.html#seminar">Seminar Hall</a></li>
+                  <li><a class="dropdown-item" href="facilities.html#transportation">Transportation</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== BANNER ===============-->
+    <section id="banner">
+        <div class="banner-image">
+          <img src="https://placehold.co/1200x400" alt="Banner Image" />
+          <div class="overlay"></div>
+        </div>
+  
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+          <h1>About Us</h1>
+          <p><a href="index.html">Home</a> → About Us</p>
+        </div>
+    </section>   
+
+    <div class="container my-5">
+
+        <!--=============== ABOUT ===============-->
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloremque corporis, commodi 
+            itaque tenetur, excepturi dignissimos quisquam exercitationem blanditiis dolor ipsam nesciunt 
+            eveniet non minus nobis, accusamus sequi earum eos. Velit aliquid aut dolore veritatis accusamus 
+            laboriosam reprehenderit, iusto sint veniam mollitia eius tenetur voluptas non quisquam recusandae 
+            enim blanditiis harum fuga praesentium beatae dolores dignissimos nisi. Veritatis accusamus 
+            adipisci perspiciatis quidem quam aperiam rem laudantium laborum natus sunt itaque, explicabo 
+            aliquam nam provident quis blanditiis illum assumenda, animi pariatur nisi saepe vitae voluptates 
+            incidunt. Mollitia perferendis consequatur laudantium, ratione neque, aut suscipit sapiente est 
+            fuga voluptas at iusto error.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloremque corporis, commodi 
+            itaque tenetur, excepturi dignissimos quisquam exercitationem blanditiis dolor ipsam nesciunt 
+            eveniet non minus nobis, accusamus sequi earum eos. Velit aliquid aut dolore veritatis accusamus 
+            laboriosam reprehenderit, iusto sint veniam mollitia eius tenetur voluptas non quisquam recusandae 
+            enim blanditiis harum fuga praesentium beatae dolores dignissimos nisi. 
+          </p>
+        </section>
+      
+        <!--=============== VALIES ===============-->
+        <section class="row-custom py-5" id="values">
+          <h2 class="section-title">Our Values</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card-custom">
+                <i class="fas fa-eye card-icon"></i>
+                <h5 class="card-title">Vision</h5>
+                <p class="card-text">To be a leading institution fostering innovation and excellence in education.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card-custom">
+                <i class="fas fa-bullseye card-icon"></i>
+                <h5 class="card-title">Mission</h5>
+                <p class="card-text">To empower students with skills and knowledge to succeed in a dynamic world.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card-custom">
+                <i class="fas fa-thumbs-up card-icon"></i>
+                <h5 class="card-title">Core Values</h5>
+                <p class="card-text">Integrity, Respect, Innovation, Excellence, and Collaboration.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <!--=============== MESSAGE ===============-->
+        <section class="row-custom" id="message">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+              <img src="https://placehold.co/300x300" alt="Principal Image" class="message-img">
+            </div>
+            <div class="col-md-8">
+              <h2 class="mb-3">Message from the Principal</h2>
+              <div class="principal-message">
+                <p>We are committed to providing our students with a transformative educational experience that prepares them for success in their careers and personal lives. Our faculty and staff are dedicated to nurturing your potential and guiding you on your path to success. Together, we create a vibrant learning community that fosters creativity, critical thinking, and leadership.</p>
+              </div>
+            </div>
+          </div>
+        </section>        
+      
+    </div>
+    
+    <!--=============== FOOTER ===============-->
+    <footer class="text-light py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & About Us -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <img src="assets/images/college-logo.png" class="img-fluid main-logo mb-3" alt="Niramaya College">
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-white mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-light text-decoration-none d-block mb-2">Home</a></li>
+              <li><a href="#" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
+              <li><a href="Courses/Course.html" class="text-light text-decoration-none d-block mb-2">Courses & Programs</a></li>
+              <li><a href="faculty.html" class="text-light text-decoration-none d-block mb-2">Faculty & Staff</a></li>
+              <li><a href="facilities.html" class="text-light text-decoration-none d-block mb-2">Facilities</a></li>
+              <li><a href="gallery.html" class="text-light text-decoration-none d-block mb-2">Gallery</a></li>
+              <li><a href="contact.html" class="text-light text-decoration-none d-block mb-2">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          <!-- Policies -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-white mb-3">Policies</h5>
+            <ul class="list-unstyled">
+              <li><a href="policies/Terms.html" class="text-light text-decoration-none d-block mb-2">Terms and Conditions</a></li>
+              <li><a href="policies/Privacy.html" class="text-light text-decoration-none d-block mb-2">Privacy Policy</a></li>
+              <li><a href="policies/Sitemap.html" class="text-light text-decoration-none d-block mb-2">Sitemap</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Us -->
+          <div class="col-md-3">
+            <h5 class="text-uppercase text-white mb-3">Contact Us</h5>
+            <address class="text-light mb-2" style="font-style: normal;">123 College Road, City, State</address>
+            <p class="mb-2"><a href="mailto:info@college.com" class="text-light text-decoration-none">Email: info@college.com</a></p>
+            <p><a href="tel:+1234567890" class="text-light text-decoration-none">Phone: +1234567890</a></p>
+    
+            <!-- Social Media Icons -->
+            <div class="mt-3">
+              <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <hr class="text-white my-4" />
+    
+        <!-- Footer Bottom -->
+        <p class="text-white text-center mb-0">
+          © 2025 Niramaya College. All rights reserved. Designed by <a target="_blank" class="text-light" href="https://anuswarr.netlify.app/" class="text-light text-decoration-none">Anuswar</a>
+        </p>
+      </div>
+    </footer>    
+
+    <!--=============== SCROLLTOTOP ===============-->
+    <button id="scrollToTop" class="">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
