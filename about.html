@@ -3,8 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us | Niramaya college</title>
-    <link href="assets/images/favicon.png" rel="icon" type="image/x-icon" />
+    <title>About Us | Niramaya College of Nursing & Allied Sciences</title>
+    <link href="assets/images/favicon.jpg" rel="icon" type="image/x-icon" />
+
+    <meta name="title" content="About Us | Niramaya College of Nursing & Allied Sciences" />
+    <meta name="keywords" content="About Niramaya, Nursing College History, Healthcare Education, Medical Studies">
+    <meta name="description" content="Learn more about Niramaya College of Nursing & Allied Sciences, our mission, vision, and commitment to excellence in healthcare education." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.niramayacollege.com/about" />
+    <meta property="og:title" content="About Us | Niramaya College of Nursing & Allied Sciences" />
+    <meta property="og:description" content="Learn more about Niramaya College of Nursing & Allied Sciences, our mission, vision, and commitment to excellence in healthcare education." />
+    <meta property="og:image" content="assets/images/banner-1.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.niramayacollege.com/about" />
+    <meta property="twitter:title" content="About Us | Niramaya College of Nursing & Allied Sciences" />
+    <meta property="twitter:description" content="Learn more about Niramaya College of Nursing & Allied Sciences, our mission, vision, and commitment to excellence in healthcare education." />
+    <meta property="twitter:image" content="assets/images/banner-1.jpg" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -22,10 +41,13 @@
   
       /* Card Styling */
       .card-custom {
-        background-color: #fff;
         padding: 2rem;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #12214a;
+        color: #ffffff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
         transition: transform 0.3s ease-in-out;
       }
@@ -34,27 +56,23 @@
         transform: translateY(-5px);
       }
   
-      .card-icon {
-        font-size: 3rem;
-        color: #007bff;
-        margin-bottom: 1rem;
-      }
-  
       .card-title {
-        font-size: 1.5rem;
         font-weight: 500;
+        font-size: 22px;
+        color: #c69249;
+        margin-bottom: 15px;
+        text-transform: uppercase;
       }
   
       .card-text {
-        font-size: 1.1rem;
-        color: #6c757d;
+        font-size: 16px;
+        line-height: 1.5;
       }
   
       /* Principal's Message */
       .message-img {
         width: 100%;
-        max-width: 300px;
-        height: auto;
+        height: 400px;
         aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 10px;
@@ -74,7 +92,8 @@
       /* Responsive Adjustments */
       @media (max-width: 768px) {
         .message-img {
-          max-width: 250px;
+          width: auto;
+          height: auto;
         }
       }
     </style>
@@ -98,16 +117,8 @@
               <i class="fa-brands fa-facebook-f"></i>
             </a>
 
-            <a href="#" class="btn-primary me-2 rounded-circle" style="background: #1da1f2; border: none">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-
             <a href="#" class="btn-primary me-2 rounded-circle" style="background: #e4405f; border: none">
                 <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="#" class="btn-primary me-2 rounded-circle" style="background: #0077b5; border: none">
-              <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
@@ -129,7 +140,7 @@
 
               <!-- About Us Dropdown -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About Us
                 </a>
 
@@ -146,30 +157,15 @@
                   Courses & Programs
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                  <li><a class="dropdown-item" href="Courses/Course.html">BSc OT & Anesthesia</a></li>
-                  <li><a class="dropdown-item" href="Courses/Course.html">BSc MIT</a></li>
-                  <li><a class="dropdown-item" href="Courses/Course.html">BSc MLT</a></li>
-                  <li><a class="dropdown-item" href="Courses/Course.html">BSc Nursing</a></li>
+                  <li><a class="dropdown-item" href="Courses/Bsc-OT-&-Anesthesia.html">BSc OT & Anesthesia</a></li>
+                  <li><a class="dropdown-item" href="Courses/Bsc-MIT.html">BSc MIT</a></li>
+                  <li><a class="dropdown-item" href="Courses/Bsc-MLT.html">BSc MLT</a></li>
+                  <li><a class="dropdown-item" href="Courses/Bsc-Nursing.html">BSc Nursing</a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="faculty.html">Faculty & Staff</a>
-              </li>
-
-              <!-- Facilities Dropdown -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="facilities.html" id="facilitiesDropdown"  role="button" data-bs-toggle="dropdown"  aria-expanded="false">
-                  Facilities
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
-                  <li><a class="dropdown-item" href="facilities.html#laboratory">Lab</a></li>     
-                  <li><a class="dropdown-item" href="facilities.html#library">Library</a></li>
-                  <li><a class="dropdown-item" href="facilities.html#classrooms">Classrooms</a></li>
-                  <li><a class="dropdown-item" href="facilities.html#computer">Computer Lab</a></li>
-                  <li><a class="dropdown-item" href="facilities.html#seminar">Seminar Hall</a></li>
-                  <li><a class="dropdown-item" href="facilities.html#transportation">Transportation</a></li>
-                </ul>
               </li>
 
               <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
@@ -184,7 +180,7 @@
     <!--=============== BANNER ===============-->
     <section id="banner">
         <div class="banner-image">
-          <img src="https://placehold.co/1200x400" alt="Banner Image" />
+          <img src="assets/images/banner-1.jpg" alt="Banner Image" />
           <div class="overlay"></div>
         </div>
   
@@ -195,75 +191,87 @@
         </div>
     </section>   
 
-    <div class="container my-5">
-
-        <!--=============== ABOUT ===============-->
+    <!--=============== ABOUT ===============-->
+    <section class="container my-5">
+        
         <section>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloremque corporis, commodi 
-            itaque tenetur, excepturi dignissimos quisquam exercitationem blanditiis dolor ipsam nesciunt 
-            eveniet non minus nobis, accusamus sequi earum eos. Velit aliquid aut dolore veritatis accusamus 
-            laboriosam reprehenderit, iusto sint veniam mollitia eius tenetur voluptas non quisquam recusandae 
-            enim blanditiis harum fuga praesentium beatae dolores dignissimos nisi. Veritatis accusamus 
-            adipisci perspiciatis quidem quam aperiam rem laudantium laborum natus sunt itaque, explicabo 
-            aliquam nam provident quis blanditiis illum assumenda, animi pariatur nisi saepe vitae voluptates 
-            incidunt. Mollitia perferendis consequatur laudantium, ratione neque, aut suscipit sapiente est 
-            fuga voluptas at iusto error.
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloremque corporis, commodi 
-            itaque tenetur, excepturi dignissimos quisquam exercitationem blanditiis dolor ipsam nesciunt 
-            eveniet non minus nobis, accusamus sequi earum eos. Velit aliquid aut dolore veritatis accusamus 
-            laboriosam reprehenderit, iusto sint veniam mollitia eius tenetur voluptas non quisquam recusandae 
-            enim blanditiis harum fuga praesentium beatae dolores dignissimos nisi. 
+            The success of our students and graduates is the prime focus of Niramaya College of Nursing & 
+            Allied sciences. Nurses are much important to the healthcare sector for proper development and 
+            sustainment. Our faculties and staff are dedicated to equipping learners with the necessary 
+            knowledge and skills to greatly improve the care outcomes and the quality of life they serve.
           </p>
         </section>
-      
-        <!--=============== VALIES ===============-->
+
         <section class="row-custom py-5" id="values">
-          <h2 class="section-title">Our Values</h2>
+          <div class="title text-center mb-5">
+            <h1 class="fw-bold">Our Values</h1>
+          </div>
           <div class="row">
             <div class="col-md-4 mb-4">
               <div class="card-custom">
-                <i class="fas fa-eye card-icon"></i>
+                <i class="fas fa-eye icon"></i>
                 <h5 class="card-title">Vision</h5>
                 <p class="card-text">To be a leading institution fostering innovation and excellence in education.</p>
               </div>
             </div>
             <div class="col-md-4 mb-4">
               <div class="card-custom">
-                <i class="fas fa-bullseye card-icon"></i>
+                <i class="fas fa-bullseye icon"></i>
                 <h5 class="card-title">Mission</h5>
                 <p class="card-text">To empower students with skills and knowledge to succeed in a dynamic world.</p>
               </div>
             </div>
             <div class="col-md-4 mb-4">
               <div class="card-custom">
-                <i class="fas fa-thumbs-up card-icon"></i>
+                <i class="fas fa-thumbs-up icon"></i>
                 <h5 class="card-title">Core Values</h5>
                 <p class="card-text">Integrity, Respect, Innovation, Excellence, and Collaboration.</p>
               </div>
             </div>
           </div>
         </section>
-      
-        <!--=============== MESSAGE ===============-->
+
         <section class="row-custom" id="message">
-          <div class="row align-items-center">
+          <div class="title text-center mb-5">
+            <h1 class="fw-bold">Message from the Principal</h1>
+          </div>
+
+          <div class="row align-items-center mb-5">
             <div class="col-md-4 text-center">
-              <img src="https://placehold.co/300x300" alt="Principal Image" class="message-img">
+              <img src="assets/images/Mr.BShivashankarpai.png" alt="Principal Image" class="message-img">
             </div>
+            
             <div class="col-md-8">
-              <h2 class="mb-3">Message from the Principal</h2>
               <div class="principal-message">
-                <p>We are committed to providing our students with a transformative educational experience that prepares them for success in their careers and personal lives. Our faculty and staff are dedicated to nurturing your potential and guiding you on your path to success. Together, we create a vibrant learning community that fosters creativity, critical thinking, and leadership.</p>
+                <p>Nursing is one of the most Nobel Profession which gives highly satisfaction in our development.</p>
+                <p>We have well experienced, excellent, dedicated faculty towards the student’s success and achievement. Every year our students name had enrolled in university top rank list.</p>
+                <p>We have an excellent infrastructure with conducive learning environment like library facilities, internet and also hostel facilities with all the available amenities to support the student study and pleasant stay here.</p>
+                <p>Our campus has excellent playground for volleyball, basketball, cricket, table tennis, badminton etc. which facilitates and motivates our students to be physically and mentally fit. Our institution also provides Cafeteria, Stationary shop, Browsing centre, Printing, Xeroxing Etc.</p>
+                <p>“Put your hands together to strengthen our institute we assure your ward success is our success.”</p>
               </div>
             </div>
           </div>
+
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center order-md-2">
+                <img src="assets/images/DrFlaviaCastelino.png" alt="Principal Image" class="message-img img-fluid">
+            </div>
+        
+            <div class="col-12 col-md-8 order-md-1">
+                <div class="principal-message">
+                    <p>The institution was established with the noble aim of providing access to good education for the rural, economically backward children of the surrounding villages to mold them into responsible and productive citizens of the future with the vision of ‘Preparing the students from courtyard to the world’</p>
+                    <p>We have well experienced, excellent, dedicated faculty towards the student’s success and achievement. Every year our students name had enrolled in university top rank list.</p>
+                    <p>We here believe in providing quality education both in theory and practical under qualified and efficient Professors & lectures to develop critical thinking skills, and competencies and face the challenges in the present world.The teacher-student ratio is maintained for comprehensive teaching in the learning process for programes.</p>
+                    <p>Nursing is a service profession, that gives meaning to life by being life to the needed.</p>
+                    <p>I am proud to be part of the nursing profession and thus welcome students to join hands with us.</p>
+                </div>
+            </div>
+        </div>
+        
         </section>        
       
-    </div>
+    </section>
     
     <!--=============== FOOTER ===============-->
     <footer class="text-light py-5">
@@ -272,7 +280,6 @@
           <!-- Logo & About Us -->
           <div class="col-md-3 mb-4 mb-md-0">
             <img src="assets/images/college-logo.png" class="img-fluid main-logo mb-3" alt="Niramaya College">
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
     
           <!-- Quick Links -->
@@ -281,9 +288,8 @@
             <ul class="list-unstyled">
               <li><a href="index.html" class="text-light text-decoration-none d-block mb-2">Home</a></li>
               <li><a href="#" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
-              <li><a href="Courses/Course.html" class="text-light text-decoration-none d-block mb-2">Courses & Programs</a></li>
+              <li><a href="index.html#course" class="text-light text-decoration-none d-block mb-2">Courses & Programs</a></li>
               <li><a href="faculty.html" class="text-light text-decoration-none d-block mb-2">Faculty & Staff</a></li>
-              <li><a href="facilities.html" class="text-light text-decoration-none d-block mb-2">Facilities</a></li>
               <li><a href="gallery.html" class="text-light text-decoration-none d-block mb-2">Gallery</a></li>
               <li><a href="contact.html" class="text-light text-decoration-none d-block mb-2">Contact Us</a></li>
             </ul>
@@ -295,23 +301,38 @@
             <ul class="list-unstyled">
               <li><a href="policies/Terms.html" class="text-light text-decoration-none d-block mb-2">Terms and Conditions</a></li>
               <li><a href="policies/Privacy.html" class="text-light text-decoration-none d-block mb-2">Privacy Policy</a></li>
-              <li><a href="policies/Sitemap.html" class="text-light text-decoration-none d-block mb-2">Sitemap</a></li>
             </ul>
           </div>
     
           <!-- Contact Us -->
           <div class="col-md-3">
             <h5 class="text-uppercase text-white mb-3">Contact Us</h5>
-            <address class="text-light mb-2" style="font-style: normal;">123 College Road, City, State</address>
-            <p class="mb-2"><a href="mailto:info@college.com" class="text-light text-decoration-none">Email: info@college.com</a></p>
-            <p><a href="tel:+1234567890" class="text-light text-decoration-none">Phone: +1234567890</a></p>
-    
+        
+            <span class="d-block text-light mb-2">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://maps.app.goo.gl/BHmCY9mDk6rq1RcN9" target="_blank" class="text-light text-decoration-none">
+                    Vishwothama Nagar, Bantakal, Karnataka
+                </a>
+            </span>
+        
+            <span class="d-block text-light mb-2">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+917829313333" class="text-light text-decoration-none">
+                    +91 078293 13333
+                </a>
+            </span>
+        
+            <span class="d-block text-light">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:info@niramayacollege.com" class="text-light text-decoration-none">
+                    info@niramayacollege.com
+                </a>
+            </span>
+        
             <!-- Social Media Icons -->
             <div class="mt-3">
-              <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
-              <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
-              <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
-              <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
             </div>
           </div>
         </div>
