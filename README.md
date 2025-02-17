@@ -11,7 +11,7 @@ To run this website locally or contribute to its development, follow these steps
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/Anuswar/niramaya-college.git
-    cd cisc-2024
+    cd niramaya-college
     ```
 
 2. **Open your browser** and navigate to `http://localhost:8000`.
